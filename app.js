@@ -1,12 +1,8 @@
-
 new Vue({
     el: '#app',
-    data: {
-        title: 'identicon'
-    },
     methods: {
-      onInput: function() {
-        console.log('Someone typed something');
-      }
+        onInput: function(event) {
+            console.log("Someone typed something");
+        }
     }
-  });
+});
