@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+   
 </head>
 
 <body>
-     <div id="app">
-         <h3>My Identicon Generator</h3>
-         Input:
-         <input type="text" v-on:input="onInput">
-         </div>
-     </div>
+    <div id="app">
+           
+        <div>
+            <h3>My Identicon Generator</h3>
+            Input: 
+            <input v-on:input="onInput"/>
+        </div>
+        <div>
+            Output:
+            <div v-html="identicon" />
+        </div>
+
+        <script src="https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js">
+        </script>
+       
+    </div>
+</body>
+
+    <script src="app.js"></script>
+  
    
 
-</body>
-    <script src="app.js"></script>
 </html>
-
-
